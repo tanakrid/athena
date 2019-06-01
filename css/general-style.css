@@ -23,4 +23,28 @@ body{
 
 #navigator-bar-buttom > div{
     margin: auto;
+    width: 10%;
+    height: 55%;
+    background-position: center;
+    background-size: 100%;
+}
+
+#navigator-bar-buttom > div > a > div{
+    width: 50px;
+    height: 50px;
+}
+#home{
+    background-image: url("../asset/097-Home.png");
+}
+#search-all{
+    background-image: url("../asset/Find.png");
+}
+#my-store{
+    background-image: url("../asset/book.png");
+}
+#notification{
+    background-image: url("../asset/noti.png");
+}
+#profile{
+    background-image: url("../asset/User.png");
 }
