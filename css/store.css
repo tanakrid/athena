@@ -1,0 +1,14 @@
+.card-goods{
+    background-color: aqua;
+    border: 1px solic black;
+    width: 300px;
+    height: 70px;
+}
+#pdf-format, #chat-format{
+    margin: 5px;
+    background-color: red;
+    border: 1px solic black;
+    width: 70px;
+    height: 35px;
+}
+

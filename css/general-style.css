@@ -1,0 +1,26 @@
+body{
+    margin: 0;
+}
+
+.field-card{
+    display: flex;
+}
+
+/* div{
+    border: 1px solid black;
+} */
+
+#navigator-bar-buttom{
+    width: 100%;
+    height: 10%;
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    position: fixed;
+    bottom: 0;
+    
+}
+
+#navigator-bar-buttom > div{
+    margin: auto;
+}
