@@ -12,3 +12,23 @@
     height: 35px;
 }
 
+#selector-goods{
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+    margin: auto;
+    margin-top: 10px;
+    border: 1px solid black;
+
+}
+
+#selector-goods > a > div{
+    margin:auto;
+    width: 150px;
+    text-align: center;
+    font-size: 1.3rem;
+    font-weight: bold;
+    border: 1px solid black;
+
+}
+

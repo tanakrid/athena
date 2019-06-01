@@ -8,46 +8,85 @@
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-    
+    <link rel="stylesheet" href="css/general-style.css">
+    <link rel="stylesheet" href="css/video.css">
     <title>Sell and Buy video</title>
 </head>
 <body>
     <div id="preview-video">
         <!-- <video src="/asset/คลิปเดียว12.mp4"></video> -->
         <video controls>
-                <source src="/asset/คลิปเดียว12.mp4"
+                <source src="https://www.youtube.com/watch?v=gpZPbhoCYNU"
                         type='video/mp4;codecs="avc1.42E01E, mp4a.40.2"'/>
               </video>
     </div>
     <!-- เป็นพื้นที่แสดงผลของสินค้าซึ่งจะมีลักษณะไมต่างกัน -->
     <div class="detail">
-
-        <p id="name">วิทยาศาสตร์</p>
-        <p id="tutor">นาย ก้อง ห้อยไร่</p>
-        <p id="caption">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere numquam officia, fuga tenetur atque quo harum tempore optio a sequi, deserunt quidem qui id sunt eligendi? Quisquam veniam provident suscipit.</p>
-        <p id="price">200 บาท</p>
-
-        <div id="tags"></div>
-
-        <p id="detail-goods">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis atque maxime itaque earum reiciendis praesentium exercitationem, dolorum esse quos, quaerat voluptatum provident consequuntur vel dolor eveniet autem debitis, eos laborum!</p>
+        <div id="name">
+            <h3>ฟิสิกส์ 1</h3>
+            <p>นาย ธนกฤต  จันทร์บุรี - <b>วิดีโอ</b></p>
+        </div>
+        <div id="price">150 baht</div>
     </div>
+    <hr>
+    <div id="some-content">
+        <h3>ประวัติโดยย่อ</h3>
+        <ul>
+            <li style="color: red"> คณะวิศวกรรมศาสตร์ </li>
+            <li>เกรดวิชา 01420111 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; A</li>    
+        </ul>
+    </div>
+    <div id="tag">
+        <div>ฟิสิกส์</div>
+        <div>วิศวกรรมศาสตร์</div>
+    </div>
+    <hr>
+    <div id="detail-subject">
+        <h3>เกี่ยวกับรายวิชา</h3>
+        <h5>วิดีโอเฉพาะทางฟิสิกสืครบทุกเรื่อง ในฟิสิสกส์ 1</h5>
+        <ul>
+            <li>บทนำ</li>
+            <li>เวคเตอร์ การเคลื่อนที่ในแนวตรง</li>
+            <li>การเคลื่อนที่ในระนาบ</li>
+            <li>แรงและกฎการเคลื่อนที่ของนิวตัน</li>
+            <li>งานและพลังงาน</li>
+            <li>โมเมนตัมและการดล</li>
+        </ul>
+    </div>
+    <hr>
+    <button type="button" class="btn btn-primary btn-lg" style="right:0;">Buy</button>
     <div id="review">
         <h3>review</h3>
         <div class="card-review">
-            <img src="" alt="">
-            <p>asperiores numquam, aliquid iste, qui molestias consequuntur! Assumenda, similique?</p>
+            <div class="profile-review">
+                <div id="image-user" style="width: 15%;height: 50px;"></div>
+                <div>ศศิรินทร์ พวงตะคุ</div>
+                <div id="rate"></div>
+                <div id="date">2 day ago</div>
+            </div>
+        <p>asperiores numquam, aliquid iste, qui molestias consequuntur! Assumenda, similique?</p>
         </div>
+
+        <div class="card-review">
+                <div class="profile-review">
+                    <div id="image-user" style="width: 15%;height: 50px;"></div>
+                    <div>ศศิรินทร์ พวงตะคุ</div>
+                    <div id="rate"></div>
+                    <div id="date">2 day ago</div>
+                </div>
+            <p>asperiores numquam, aliquid iste, qui molestias consequuntur! Assumenda, similique?</p>
+            </div>
     </div>
 
-    <button type="button" class="btn btn-primary btn-lg">Primary</button>
+
 
     <!-- ทุกไฟล์ต้องมีสิ่งนี้มันคือบาร์ที่จะโยงไปถึงทุกหน้าหลัก -->
     <div id="navigator-bar-buttom"> 
-        <a href="" id="home"></a>
-        <a href="" id="search-all"></a>
-        <a href="" id="my-store"></a>
-        <a href="" id="notification"></a>
-        <a href="" id="profile"></a>
-    </div>
+            <div id="home"><a href="index.html"><div></div></a></div>
+            <div id="search-all"><a href="search-filter.html"><div></div></a></div>
+            <div id="my-store"><a href="store-goods.html"><div></div></a></div>
+            <div id="notification"><a href="#"><div></div></a></div>
+            <div id="profile"><a href="#"><div></div></a></div>
+        </div>
 </body>
 </html>
